@@ -1,9 +1,28 @@
 package com.example.BackEndCVMatchMaking.models;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Entity
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class Empresa {
 
-    private String titulo;
-    private String descripcion;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer idEmpresa;
+
+    private String usuario;
+    private String contrasena;
+
     private String nombreEmpresa;
     private String locacion;
 
