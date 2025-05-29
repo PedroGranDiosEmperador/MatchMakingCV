@@ -1,5 +1,9 @@
 package com.example.BackEndCVMatchMaking.repositories;
 
-public interface TrabajoRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.example.BackEndCVMatchMaking.models.Trabajo;
+
+public interface TrabajoRepository extends JpaRepository <Trabajo, Integer>{
 
 }

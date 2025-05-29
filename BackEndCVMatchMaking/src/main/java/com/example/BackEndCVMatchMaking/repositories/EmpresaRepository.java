@@ -1,5 +1,10 @@
 package com.example.BackEndCVMatchMaking.repositories;
 
-public interface EmpresaRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.example.BackEndCVMatchMaking.models.CurriculumVitae;
+import com.example.BackEndCVMatchMaking.models.Empresa;
+
+public interface EmpresaRepository extends JpaRepository <Empresa, Integer>{
 
 }
