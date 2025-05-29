@@ -58,4 +58,11 @@ public class CurriculumVitaeService {
         }
     }
 
+    public List<String> recuperarHabilidadesFuertes(CurriculumVitae cabron){
+        return cabron.getHabilidadesFuertes();
+    }
+
+    public List<String> recuperarHabilidadesBlandas(CurriculumVitae cv){
+        return cv.getHabilidadesBlandas();
+    }
 }

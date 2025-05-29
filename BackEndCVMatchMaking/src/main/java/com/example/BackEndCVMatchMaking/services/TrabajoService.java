@@ -56,4 +56,8 @@ public class TrabajoService {
         }
     }
 
+    public List<String> recuperarHabilidadesFuertes(Trabajo t){
+        return t.getHabilidadesBlandas();
+    }
+
 }
