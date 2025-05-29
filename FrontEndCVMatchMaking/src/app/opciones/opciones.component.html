@@ -1,0 +1,15 @@
+<p>opciones works!</p>
+
+<div style="text-align: center; margin-top: 50px;">
+  <h2>Bienvenido, {{ tipoUsuario | titlecase }}</h2>
+
+  <div *ngIf="tipoUsuario === 'empleador'">
+    <button routerLink="/subir">Subir Empleo</button>
+    <button routerLink="/eliminar">Eliminar Empleo</button>
+  </div>
+
+<div *ngIf="tipoUsuario === 'empleado'">
+    <button routerLink="/cv">Curriculum</button>
+    <button routerLink="/buscarempleo">Buscar Empleo</button>
+  </div>
+</div>
