@@ -38,7 +38,7 @@ public class Trabajo {
     private byte nivelEducativo;
     private byte experiencia;
 
-    private List<String> habilidadesBlandas;
-    private List<String> habilidadesFuertes;
+    private String[] habilidadesBlandas;
+    private String[] habilidadesFuertes;
 
 }

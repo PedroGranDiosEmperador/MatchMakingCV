@@ -13,6 +13,14 @@ public class MatchMakingService {
     @Autowired
     private TrabajoService trabajoService;
     private CurriculumVitaeService curriculumService;
+    
+    // < -- PESOS PARA LA EVALUACION DE APLICANTES [TRABAJO --> CURRICULUM]
+    private float pagoEsperadoT = 0.20f;
+    private float pesoHBlandasT = 0.30f;
+    private float pesoHFuertesT = 0.50f;
+
+    
+
 
     /* METODOS PARA EL CALCULO DE COINCIDENCIA */
     // public float SumaHabilidades(CurriculumVitae cv, Trabajo t){
@@ -117,3 +125,4 @@ public class MatchMakingService {
         }
     } 
 }
+
