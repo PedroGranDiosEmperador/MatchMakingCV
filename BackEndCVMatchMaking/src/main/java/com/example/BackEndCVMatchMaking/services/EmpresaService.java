@@ -4,10 +4,12 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.example.BackEndCVMatchMaking.models.Empresa;
 import com.example.BackEndCVMatchMaking.repositories.EmpresaRepository;
 
+@Service
 public class EmpresaService {
 
     @Autowired
@@ -43,7 +45,7 @@ public class EmpresaService {
         }
     }
 
-    public boolean deleteEmpleado(Integer id){
+    public boolean deleteEmpresa(Integer id){
 
         Optional<Empresa> empresa = empresaRepository.findById(id);
         if(empresa.isPresent()){

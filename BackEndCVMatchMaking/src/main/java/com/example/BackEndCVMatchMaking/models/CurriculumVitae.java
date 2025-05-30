@@ -2,8 +2,6 @@ package com.example.BackEndCVMatchMaking.models;
 
 import java.util.List;
 
-import org.hibernate.annotations.IdGeneratorType;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;

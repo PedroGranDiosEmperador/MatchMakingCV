@@ -4,12 +4,12 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.example.BackEndCVMatchMaking.models.CurriculumVitae;
-import com.example.BackEndCVMatchMaking.models.Trabajo;
 import com.example.BackEndCVMatchMaking.repositories.CurriculumVitaeRepository;
-import com.example.BackEndCVMatchMaking.repositories.TrabajoRepository;
 
+@Service
 public class CurriculumVitaeService {
 
     @Autowired

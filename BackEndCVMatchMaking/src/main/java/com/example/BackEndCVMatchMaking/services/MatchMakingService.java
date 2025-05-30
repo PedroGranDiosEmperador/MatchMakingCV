@@ -3,10 +3,12 @@ package com.example.BackEndCVMatchMaking.services;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.example.BackEndCVMatchMaking.models.CurriculumVitae;
 import com.example.BackEndCVMatchMaking.models.Trabajo;
 
+@Service
 public class MatchMakingService {
 
     @Autowired
@@ -19,7 +21,6 @@ public class MatchMakingService {
     private float pesoHFuertesT = 0.50f;
 
     
-
 
     /* METODOS PARA EL CALCULO DE COINCIDENCIA */
     public float SumaHabilidades(String[] habilidadesCV, String[] habilidadesT){
@@ -50,7 +51,6 @@ public class MatchMakingService {
             return 0;
         
         return razonSueldo;     //<-- SUELDO PROPUESTO EXCEDE 49% - 0% EL SUELDO PROPUESTO
-
     }
 
 }
