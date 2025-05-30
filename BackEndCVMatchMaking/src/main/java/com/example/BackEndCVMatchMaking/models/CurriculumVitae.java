@@ -41,8 +41,8 @@ public class CurriculumVitae {
 
     private float sueldoEsperado;
 
-    private List<String> habilidadesBlandas;
-    private List<String> habilidadesFuertes;
+    private String[] habilidadesBlandas;
+    private String[] habilidadesFuertes;
 
     /* POTENCIALMENTE >/> GENERAR 1-1 CON EMPLEADO */
 }
