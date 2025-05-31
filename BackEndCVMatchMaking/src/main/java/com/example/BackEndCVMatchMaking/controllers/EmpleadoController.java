@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.BackEndCVMatchMaking.models.Empleado;
+import com.example.BackEndCVMatchMaking.models.Empresa;
 import com.example.BackEndCVMatchMaking.services.EmpleadoService;
 
 @RestController
@@ -50,6 +51,12 @@ public class EmpleadoController {
     public boolean deleteEmpleado(@PathVariable Integer id){
 
         return empleadoService.deleteEmpleado(id);
+    }
+
+    @GetMapping("/login/{correo}/{contrasena}")
+    public Empleado loginEmpleado(@PathVariable String correo, @PathVariable String contrasena){
+
+        return empleadoService.loginEmpleado(correo, contrasena);  
     }
 
 }

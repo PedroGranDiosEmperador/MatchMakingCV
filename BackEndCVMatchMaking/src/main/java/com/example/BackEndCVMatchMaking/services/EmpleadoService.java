@@ -58,4 +58,11 @@ public class EmpleadoService {
         }
     }
 
+    /* SERVICIOS ADICIONALES */
+    public Empleado loginEmpleado(String correo, String contrasena){
+
+        Optional<Empleado> empleado = empleadoRepository.loginEmpleado(correo, contrasena);
+        return empleado.get();
+    }
+
 }

@@ -6,6 +6,7 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.example.BackEndCVMatchMaking.models.Empleado;
 import com.example.BackEndCVMatchMaking.models.Empresa;
 import com.example.BackEndCVMatchMaking.repositories.EmpresaRepository;
 
@@ -58,4 +59,10 @@ public class EmpresaService {
         }
     }
 
+    /* SERVICIOS ADICIONALES */
+    public Empresa loginEmpresa(String correo, String contrasena){
+
+        Optional<Empresa> empresa = empresaRepository.loginEmpresa(correo, contrasena);
+        return empresa.get();
+    }
 }

@@ -1,6 +1,7 @@
 package com.example.BackEndCVMatchMaking.controllers;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -50,6 +51,12 @@ public class EmpresaController {
     public boolean deleteEmpresa(@PathVariable Integer id){
 
         return empresaService.deleteEmpresa(id);
+    }
+
+    @GetMapping("/login/{correo}/{contrasena}")
+    public Empresa loginEmpresa(@PathVariable String correo, @PathVariable String contrasena){
+
+        return empresaService.loginEmpresa(correo, contrasena);
     }
 
 }

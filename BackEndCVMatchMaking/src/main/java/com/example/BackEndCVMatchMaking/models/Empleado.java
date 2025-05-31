@@ -1,5 +1,6 @@
 package com.example.BackEndCVMatchMaking.models;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -24,6 +25,8 @@ public class Empleado {
 
     private String nombre;
     private String telefono;
+    
+    @Column(unique=true)
     private String correo;
     private String contrasena;
 }
